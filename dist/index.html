@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>揭阳供电局数字化创新应用工作台</title>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script type="module" crossorigin src="/assets/index.1b54bc75.js"></script>
+  </head>
+<body>
+  <div id="app">
+    <div class="container">
+	<nav class="navbar">
+		<div class="logo-and-title">
+				<div class="logo">
+					<img src="./assets/logo.png">
+				</div>
+				<h2 style="color: white;">揭阳供电局数字化创新应用工作台</h2>
+		</div>
+		<div class="nav-buttons-wrapper">
+			<div class="nav-buttons">
+				<span >待办按钮</span>
+				<span>|</span>
+				<span >用户名</span>
+			</div>
+		</div>
+     </nav> 
+      <div class="content">
+        <div class="section">
+          <div class="sub-section" style="background-image: url('./assets/picture01.jpg');">
+            <div>
+				<h2 style="color: white;"> 数字化工作指标</h2>
+				<span style="color: white;">Digital Work Metrics</span>
+            </div>
+			<div>
+			    <img  class="DigitalWorkMetricsImg" style="width: 60%; height: 60%; background-color: blue;" src="assets/DigitalWorkMetrics.png" />
+			</div>
+          </div>
+          <div class="sub-section" style="background-image: url('./assets/picture02.jpg'); margin-left: 5%;">
+            <div>
+				<h2 style="color: white;">动态信息</h2>
+				<span style="color: white;">Dynamic Information</span>
+            </div>
+			<div>
+			    <img  class="DigitalWorkMetricsImg" style="width: 60%; height: 60%; background-color: blue;" src="assets/DynamicInformation.png" />
+			</div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="sub-section" style="background-image: url('./assets/picture03.jpg');">
+            <div>
+				<h2 style="color: white;">  数字化工作计划</h2>
+				<span style="color: white;">Digital Work Plan</span>
+            </div>
+			<div>
+			    <img  class="DigitalWorkMetricsImg" style="width: 60%; height: 60%; background-color: blue; box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6); " src="assets/DigitalWorkPlan01.png" />
+			</div>
+          </div>
+          <div class="sub-section" style="background-image: url('./assets/picture04.jpg'); margin-left: 5%;">
+			<div>
+              <h2 style="color: white;">  网络安全</h2>
+              <span style="color: white;">Network Security</span>
+            </div>
+			<div>
+			    <img  class="DigitalWorkMetricsImg" style="width: 60%; height: 60%; background-color: blue;" src="assets/DigitalWorkMetrics.png" />
+			</div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="sub-section" style="background-image: url('./assets/picture05.jpg');">
+			<div>
+				<h2 style="color: white;">  数字化项目进度</h2>
+				<span style="color: white;">Progress of Digital Projects</span>
+            </div>
+			<div>
+			    <img  class="DigitalWorkMetricsImg" style="width: 60%; height: 60%; background-color: blue;" src="assets/DigitalWorkMetrics.png" />
+			</div>
+          </div>
+          <div class="sub-section" style="background-image: url('./assets/picture06.jpg'); margin-left: 5%;">
+			<div> 
+				<h2 style="color: white;">  案例分享</h2>
+				<span style="color: white;">Case Sharing</span>
+            </div>
+			<div>
+			    <img  class="DigitalWorkMetricsImg" style="width: 60%; height: 60%; background-color: blue;" src="assets/DigitalWorkMetrics.png" />
+			</div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="sub-section" style="background-image: url('./assets/picture07.jpg');  ">
+            <div>
+				<h2 style="color: white;">数字化成果</h2>
+				<span style="color: white;">Digital Achievements</span>
+            </div>
+			<div>
+			    <img  class="DigitalWorkMetricsImg" style="width: 60%; height: 60%; background-color: blue;" src="assets/DigitalWorkMetrics.png" />
+			</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const { createApp } = Vue;
+
+    createApp({
+      data() {
+        return {
+          // Your data here if needed
+        };
+      },
+      // Your methods, computed properties, etc., here if needed
+    }).mount('#app');
+  </script>
+</body>
+  <style>
+    body {
+	  overflow: hidden;
+      background-color: lightblue; /* Set background color */
+      margin: 0; /* Remove default body margin */
+      padding: 0; /* Remove default body padding */
+    }
+    .container {
+      height: calc(100vh - 15px); /* Adjusted container height */
+      display: flex;
+      flex-direction: column;
+    }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+	margin-left: 0px; /* Add margin to the right */
+    align-items: center;
+	border-radius: 7px;
+    background-color: RGB(0,54,175);
+	width: 100%;
+    padding: 5px;
+  }
+  .navbar h2 {
+    text-align: left; /* Align the text to the left */
+  }
+  .logo img {
+    align-items: center; /* Adjust logo height */
+	
+  }
+  .logo-and-title {
+	      display: flex;
+	      align-items: center;
+  }
+    .logo-and-title h2 {
+      margin-left: 5px; /* Add margin to the left of the h2 */
+    }
+  .nav-buttons {
+    display: flex;
+  }
+  .nav-buttons span {
+    margin-left: 10px; /* Add space between nav buttons */
+    color: white;
+  }
+  .nav-buttons-wrapper {
+	cursor: pointer;
+    margin-right: 2%; /* Add margin to the right */
+  }
+    .content {
+      flex: 1; /* Takes up remaining space */
+      display: flex;
+      flex-direction: column;
+    }
+    .section {
+      flex: 9; /* 9/10 of the remaining space */
+      display: flex;
+      margin: 5px; /* Margin */
+    }
+	.DigitalWorkMetricsImg{
+		width: auto;
+		height: 120px;
+	}
+	.functionPoints{
+		justify-content: flex-end;
+		height: 80%;
+		width: 20%;
+		border-radius: 10px;
+	}
+    .sub-section {
+      flex: 1;
+      display: flex;
+      justify-content: space-between; /* Align text to the left */
+      align-items: center;
+      border-radius: 10px;
+      background-color: white;
+      padding: 10px; /* Padding */
+      margin: 10px; /* Margin */
+	  cursor: pointer;
+	  height: 50%;
+	  /* box-shadow 属性用于添加阴影，参数分别表示水平偏移、垂直偏移、模糊半径和颜色 */
+	  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.6);
+	  filter: grayscale(30%);
+	  background-size: cover; /* 拉伸图片以覆盖整个容器 */
+	  background-repeat: no-repeat; /* 禁止图片重复 */
+    }
+    .sub-section h2,
+    .sub-section span {
+      margin: 0 5px; /* Margin */
+    }
+    .sub-section h2 {
+      font-size: larger; /* Larger font size */
+    }
+    .sub-section span {
+      font-size: smaller; /* Smaller font size */
+    }
+    .section:last-child {
+      margin-bottom: 0; /* Remove bottom margin from the last section */
+    }
+  </style>
+</html>
